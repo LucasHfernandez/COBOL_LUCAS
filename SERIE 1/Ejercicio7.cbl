@@ -5,7 +5,7 @@
       * Tectonics: cobc
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. Ejercicio7.
+       PROGRAM-ID. PROG07-09-FL.
 
        DATA DIVISION.
 
@@ -56,4 +56,4 @@
 
             STOP RUN.
 
-       END PROGRAM Ejercicio7.
+       END PROGRAM PROG07-09-FL.

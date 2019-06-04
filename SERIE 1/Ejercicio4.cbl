@@ -5,7 +5,7 @@
       * Tectonics: cobc
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. YOUR-PROGRAM-NAME.
+       PROGRAM-ID. PROG04-09-FL.
 
        DATA DIVISION.
 
@@ -45,4 +45,4 @@
 
             STOP RUN.
 
-       END PROGRAM YOUR-PROGRAM-NAME.
+       END PROGRAM PROG04-09-FL.

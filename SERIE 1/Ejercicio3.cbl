@@ -5,7 +5,7 @@
       * Tectonics: cobc
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. Ejercicio3.
+       PROGRAM-ID. PROG03-09-FL.
       *****************************************************************
       *EJERCICIO RESUELTO EN "EJERCICIO1".
       *****************************************************************
@@ -28,4 +28,4 @@
             DISPLAY "Hello world"
             STOP RUN.
 
-       END PROGRAM Ejercicio3.
+       END PROGRAM PROG03-09-FL.
