@@ -151,6 +151,10 @@
 
            END-PERFORM.
 
+           IF WSI-I = 100
+               DISPLAY "NO HAY MAS ESPACIO PARA INGRESAR NUEVO ALUMNO"
+           END-IF.
+
        200000-PROCESO.
 
            PERFORM VARYING WSI-I FROM 1 BY 1 UNTIL
