@@ -22,7 +22,8 @@
             DISPLAY "INGRESE SU APELLIDO: "
             ACCEPT WS-APELLIDO.
             DISPLAY " "
-            DISPLAY "SU NOMBRE ES: " WS-NOMBRE WS-APELLIDO.
+            DISPLAY "SU NOMBRE ES: " FUNCTION TRIM (WS-NOMBRE) " "
+                                     FUNCTION TRIM (WS-APELLIDO).
 
             STOP RUN.
 
