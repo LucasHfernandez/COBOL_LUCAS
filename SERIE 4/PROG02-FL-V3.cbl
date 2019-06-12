@@ -97,7 +97,8 @@
            INITIALIZE VARIABLES
                       TABLA_ALUMNOS
 
-              PERFORM VARYING WSI-I FROM 1 BY 1 UNTIL WSI-I > 100
+              PERFORM VARYING WSI-I FROM 1 BY 1 UNTIL WSI-I > 100 OR
+                                               WSV-RESPUESTACANT = 2
 
                 ADD 0 TO WSC-CONTADOR(WSI-I)
 
@@ -123,8 +124,10 @@
       ******************************************************************
       * INGRESO DE LAS 3 NOTAS POR MATERIA DEL ALUMNO.                 *
       ******************************************************************
+               MOVE 0 TO WSV-RESPUESTANOTA
 
-               PERFORM VARYING WSJ-J FROM 1 BY 1 UNTIL WSJ-J > 6
+               PERFORM VARYING WSJ-J FROM 1 BY 1 UNTIL WSJ-J > 6 OR
+                                              WSV-RESPUESTANOTA = 2
 
                 DISPLAY '**************************************'
                 DISPLAY 'INGRESE NOTA PRIMER PARCIAL'
@@ -252,12 +255,6 @@
                 ACCEPT WSV-RESPUESTANOTA
                 DISPLAY '**************************************'
 
-                IF WSV-RESPUESTANOTA = 1
-                    CONTINUE
-                ELSE
-                    EXIT PERFORM
-                END-IF
-
              END-PERFORM
       ******************************************************************
 
@@ -274,10 +271,6 @@
                 DISPLAY "RESPUESTA: "
                 ACCEPT WSV-RESPUESTACANT
                 DISPLAY '**************************************'
-
-                IF WSV-RESPUESTACANT = 2
-                    EXIT PERFORM
-                END-IF
 
            END-PERFORM.
 
